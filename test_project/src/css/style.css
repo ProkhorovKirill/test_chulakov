@@ -1,9 +1,4 @@
-/* *{
-    box-sizing: border-box;
-}
- */
 body{
-    /* background-color: #383D4A; */
     background-color: #1F2229;
     display: grid;
     place-items: center;
@@ -34,3 +29,45 @@ body{
 .header_location_logo{
     padding-right: 15px;
 }
+
+.promotion--size{
+    width: 1116px;
+}
+
+.promotion_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+.promotion_info_item--text{
+    color: #fff;
+    font-size: 20px;
+    max-width: 340px;
+    padding-top: 24px;
+}
+
+.profit{
+    color: #48CCFD;
+}
+
+.promotion_info_item--big_text{
+    color: #fff;
+    font-size: 68px;
+    line-height: 100%;
+    font-weight: bold;
+    padding-top: 48px;
+}
+
+.promotion_info_button {
+    margin-top: 56px;
+    width: 209px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 добавить hover !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
