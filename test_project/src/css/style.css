@@ -1,0 +1,36 @@
+/* *{
+    box-sizing: border-box;
+}
+ */
+body{
+    /* background-color: #383D4A; */
+    background-color: #1F2229;
+    display: grid;
+    place-items: center;
+}
+
+.header{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #383D4A 1px solid;
+}
+
+.header_logo{
+    padding: 21px 0 22px 32px;
+}
+
+.header_location{
+    padding: 20px 30px 24px 0;
+    display: flex;
+    align-items: center;   
+}
+
+.header_location_city{
+    color: #fff;
+    font-size: 20px;
+}
+
+.header_location_logo{
+    padding-right: 15px;
+}
