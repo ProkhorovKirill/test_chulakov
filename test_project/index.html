@@ -33,7 +33,7 @@
         </section>
 
         <section class="promotion_conditions promotion--size">
-          <h2 class="promotion_conditions_title">Один терабайт — много любимых развлечений</h2>
+          <h2 class="promotion_conditions_title promotion--title">Один терабайт — много любимых развлечений</h2>
           <p class="promotion_conditions_item">Подарок получают только новые абоненты при подключении услуг Tele2 
             с тарифом «Мой онлайн+». Трафик расходуется в течение года. </p>
           <ul class="promotion_conditions_features">
@@ -50,6 +50,46 @@
               <span>Порядка 300 000 фото</span>
             </li>
           </ul>
+        </section>
+
+        <section class="promotion_form promotion--size">
+          <div class="promotion_form_item">
+            <h2 class="promotion--title">Несколько шагов <span class="profit">и 1 ТБ — ваш</span></h2>
+            <form action="#" method="post">
+              <fieldset class="phone_group">
+                <label for="phone_number" class="phone_number_label">Номер телефона</label>
+                <input type="tel" name="user_phone_number" id="phone_number" required placeholder="+7 (999) 999-99-99" pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" autocomplete="tel" inputmode="numeric" class="phone_number_input">
+              </fieldset>
+              <fieldset class="agreement_group">
+                <label for="agreement" class="agreement_label">
+                  <input type="checkbox" name="agreement" id="agreement" required>
+                  <span class="custom-checkbox-agreement"></span>
+                  Даю согласие на обработку персональных данных. <a href="#" class="agreement_conditions">Условия соглашения.</a>
+                </label>
+              </fieldset>
+              <button type="submit" class="agreement_button">Выслать промокод</button>
+            </form>
+            <div class="form_success">
+              <div class="form_success_img"><img src="./src/images/main/section_form/Vector 5.svg" alt="galochka"></div>
+              <p class="form_success_text">Промокод выслан на ваш номер</p>
+            </div>
+          </div>
+          <div class="promotion_form_guide">
+            <ul class="promotion_form_guide_list">
+              <li class="promotion_form_guide_list_item">
+                <p class="number_of_item">1</p>
+                <p class="text_of_item">Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
+              </li>
+              <li class="promotion_form_guide_list_item">
+                <p class="number_of_item">2</p>
+                <p class="text_of_item">Перейдите на сайт Tele2 и активируйте промокод при подключении на тариф «Мой Онлайн+»</p>
+              </li>
+              <li class="promotion_form_guide_list_item">
+                <p class="number_of_item">3</p>
+                <p class="text_of_item">Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
      </main>
