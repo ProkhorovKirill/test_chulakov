@@ -80,6 +80,7 @@ body{
     font-size: 40px;
     line-height: 130%;
     color: #fff;
+    margin-bottom: 64px;
 }
 
 .promotion_conditions_item{
@@ -128,9 +129,6 @@ body{
     flex-direction: column;
 }
 
-.promotion--title{
-    margin-bottom: 64px;
-}
 
 .phone_group{
     border: none;
@@ -278,4 +276,125 @@ body{
 
 .text_of_item{
     max-width: 492px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.promotion_invite{
+    margin-top: 162px;
+    color: #fff;
+    display: flex;
+    gap: 118px;
+}
+
+.promotion_invite_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: 48px;
+    background-color: #fff;
+    border: none;
+    border-radius: 48px;
+    font-style: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    margin-top: 48px;
+}
+
+.promotion_invite_link:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+.promotion--title--link{
+    font-size: 40px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.promotion_invite_image{
+    width: 359px;
+    height: 359px;
+    border-radius: 50%;
+    background-color: #48CCFD;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.promotion_invite_image_phone{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+}
+
+.promotion_invite_image_card{
+    /* position: absolute; */
+    z-index: 0;
+    position: relative;
+    left: 34%;   
+}
+
+.footer{
+    margin-top: 148px;
+    min-height: 168px;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #383D4A;
+    margin-bottom: 42px;
+}
+
+.footer_links_conditions{
+    display: flex;
+    gap: 12px;
+
+}
+
+.footer_links_conditions_item{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_links_conditions_item:visited{
+    color: #fff;
+}
+
+.footer_links_conditions_age{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #383D4A;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: bold;
+    color: #fff;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info_tele2{
+    color: #fff;
+    opacity: 50%;
+    margin-left: 24px;
+}
+
+.footer_info_chulakov{
+    color: #fff;
+    opacity: 50%;
+    margin-right: 24px;
 }
