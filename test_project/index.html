@@ -6,20 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="test project for internship">
     <meta name="keywords" content="tele2, акция, promotion, test, test project, тестовое задание, стажировка">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
-
     <title>TELE2</title>
   </head>
   <body>
      <header class="header">
       <a href="https://rostov.tele2.ru"><img src="./src/images/header/Logo.svg" alt="TELE2_logo" class="header_logo"></a>
-          <div class="header_location">
-            <img src="./src/images/header/location.svg" alt="location" class="header_location_logo">
-            <span class="header_location_city">Санкт-Петербург</span>
-          </div>
+        <div class="header_location">
+          <img src="./src/images/header/location.svg" alt="location" class="header_location_logo">
+          <span class="header_location_city">Ростов-на-Дону</span>
+        </div>  
      </header>
+
+    <dialog class="dialog">
+        <p class="header_modal_location_question">Ваш регион Ростов-на-Дону?</p>
+        <button class="header_modal_location_true">Да, верно</button>
+        <button class="header_modal_location_change">Изменить регион</button>
+    </dialog>
+
+    <dialog class="choose_city"></dialog>
+
+    <template class="template">
+      <h3 class="template_title">Выберите город</h3>
+      <ul class="list_of_cities">
+        <li class="choosed_city">Воронеж</li>
+        <li class="choosed_city">Иркутск</li>
+        <li class="choosed_city">Кемерово</li>
+        <li class="choosed_city">Красноярск</li>
+        <li class="choosed_city">Москва</li>
+        <li class="choosed_city">Н. Новгород</li>
+        <li class="choosed_city">Новосибирск</li>
+        <li class="choosed_city">Пермь</li>
+        <li class="choosed_city">Ростов-на-Дону</li>
+        <li class="choosed_city">Санкт Петербург</li>
+        <li class="choosed_city">Челябинск</li>
+      </ul>
+    </template>
 
      <main class="main">
         <section class="promotion_info promotion--size">
@@ -132,8 +154,6 @@
         </div>
       </div>
      </footer>
-
-     
 
     <script type="module" src="./src/main.js"></script>
   </body>

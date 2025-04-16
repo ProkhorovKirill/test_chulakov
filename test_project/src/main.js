@@ -2,6 +2,42 @@ import './css/style.css'
 import './css/sanitize.css'
 //import viteLogo from '/vite.svg'
 
+const dialog = document.querySelector('.dialog');
+const city = document.querySelector('.header_location_city');
+
+dialog.show()
+
+const closeModal = document.querySelector('.header_modal_location_true');
+
+closeModal.addEventListener('click', () => {
+    dialog.close()
+    localStorage.setItem('city', city.textContent)
+});
+
+const locationQuestion = document.querySelector('.header_modal_location_question')
+
+if (localStorage.getItem('city')){
+    locationQuestion.textContent = `Ваш регион ${localStorage.getItem('city')}?`
+}
+
+const template = document.querySelector('.template');
+const changeCity = document.querySelector('.header_modal_location_change');
+const chooseCity = document.querySelector('.choose_city');
+
+chooseCity.appendChild(template.content.cloneNode(true));
+
+changeCity.addEventListener('click', () => {
+    chooseCity.showModal()
+})
+
+console.log(city.textContent);
+
+chooseCity.onclick = () => {
+    chooseCity.close()
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const phoneInput = document.getElementById('phone_number');
 
 phoneInput.addEventListener('focus', (e) => {
@@ -32,3 +68,6 @@ phoneInput.addEventListener('input', (e) => {
     }
     e.target.value = formatted;
 });
+
+
+
