@@ -2,24 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://sun6-22.userapi.com/s/v1/ig2/xLwedlQZu5QopTM-RbOp7ghifHODl2-wUh2PmXHSHNzYc3uKOlomnn9Fs8xFh_1zApA_iph9MnNKd_Y3J19vxff_.jpg?size=576x1024&quality=95&crop=72,128,576,1024&ava=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="description" content="test project for internship">
+    <title>TELE2</title>
   </head>
   <body>
      <header class="header">
-          <img src="./src/images/header/Logo.svg" alt="Logo" class="header_logo">
-
+      <a href="https://rostov.tele2.ru"><img src="./src/images/header/Logo.svg" alt="TELE2_logo" class="header_logo"></a>
           <div class="header_location">
             <img src="./src/images/header/location.svg" alt="location" class="header_location_logo">
             <span class="header_location_city">Санкт-Петербург</span>
           </div>
-
      </header>
 
      <main class="main">
         <section class="promotion_info promotion--size">
-
           <div class="promotion_info_item">
             <p class="promotion_info_item--text">Акция продлится с 1 по 20 сентября</p>
             <p class="promotion_info_item--big_text">ЭТО ВАША <span class="profit">ВЫГОДА!</span></p>
@@ -29,7 +27,6 @@
           <div class="promotion_info_photo">
             <img src="./src/images/main/section_info/Boss1 2.svg" alt="Boss1">
           </div>
-
         </section>
 
         <section class="promotion_conditions promotion--size">
@@ -59,6 +56,8 @@
               <fieldset class="phone_group">
                 <label for="phone_number" class="phone_number_label">Номер телефона</label>
                 <input type="tel" name="user_phone_number" id="phone_number" required placeholder="+7 (999) 999-99-99" pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" autocomplete="tel" inputmode="numeric" class="phone_number_input">
+                <div class="promocode_success promocode_success--hidden"><span class="checkmark-circle"></span><span>Промокод выслан на ваш номер</span></div>
+                <div class="promocode_failed promocode_failed--hidden"><p class="promocode_failed_sign">!</p><span class="promocode_failed_text">На этот номер уже выслан промокод</span></div>
               </fieldset>
               <fieldset class="agreement_group">
                 <label for="agreement" class="agreement_label">
@@ -69,9 +68,9 @@
               </fieldset>
               <button type="submit" class="agreement_button">Выслать промокод</button>
             </form>
-            <div class="form_success">
+            <div class="form_success form_success--hidden">
               <div class="form_success_img"><img src="./src/images/main/section_form/Vector 5.svg" alt="galochka"></div>
-              <p class="form_success_text">Промокод выслан на ваш номер</p>
+              <p class="form_success_text ">Промокод выслан на ваш номер</p>
             </div>
           </div>
           <div class="promotion_form_guide">
@@ -108,9 +107,9 @@
      <footer class="footer promotion--size">
       <div class="footer_links">
         <div class="footer_links_images">
-          <a href="https://x.com/"><img src="./src/images/footer/Twitter.svg" alt="twitter/X logo"></a>
-          <a href="https://vk.com/"><img src="./src/images/footer/VKontakte.svg" alt="VKontakte logo"></a>
-          <a href="https://facebook.com/"><img src="./src/images/footer/Facebook.svg" alt="Facebook logo"></a>
+          <a href="https://x.com/"><img src="./src/images/footer/Twitter.svg" alt="twitter/X logo" class="footer_links_images_item"></a>
+          <a href="https://vk.com/"><img src="./src/images/footer/VKontakte.svg" alt="VKontakte logo" class="footer_links_images_item"></a>
+          <a href="https://facebook.com/"><img src="./src/images/footer/Facebook.svg" alt="Facebook logo" class="footer_links_images_item"></a>
         </div>
         <div class="footer_links_conditions">
           <a href="#" class="footer_links_conditions_item">Полные условия акции</a>
@@ -119,15 +118,17 @@
       </div>
       <div class="footer_info">
         <div >
-          <img src="./src/images/header/Logo.svg" alt="TELE2_logo">
+          <a href="https://rostov.tele2.ru"><img src="./src/images/header/Logo.svg" alt="TELE2_logo"></a>
           <span class="footer_info_tele2">© Tele2 Россия, 2021</span>
         </div>
         <div>
           <span class="footer_info_chulakov">Сделано в Студии Олега Чулакова</span>
-          <img src="./src/images/footer/Logo 1.svg" alt="CHULAKOV_logo">
+          <a href="https://chulakov.ru/"><img src="./src/images/footer/Logo 1.svg" alt="CHULAKOV_logo"></a>
         </div>
       </div>
      </footer>
+
+     
 
     <script type="module" src="./src/main.js"></script>
   </body>

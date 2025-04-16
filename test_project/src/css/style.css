@@ -59,7 +59,7 @@ body{
     padding-top: 48px;
 }
 
-.promotion_info_button {
+.promotion_info_button{
     margin-top: 56px;
     width: 209px;
     height: 60px;
@@ -67,6 +67,10 @@ body{
     border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
+}
+
+.promotion_info_button:hover{
+    box-shadow: 0 0 3px 3px #fff;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 добавить hover !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -219,6 +223,11 @@ body{
     border-radius: 48px;
     font-style: 16px;
     line-height: 22px;
+    font-weight: bold;
+}
+
+.agreement_button:hover{
+    box-shadow: 0 0 3px 3px #fff;
 }
 
 .form_success{
@@ -230,7 +239,6 @@ body{
     border-radius: 8px;
     height: 48px;
     padding-left: 12px;
-    display: none;
 }
 
 .form_success_img{
@@ -246,6 +254,10 @@ body{
 .form_success_text{
     font-size: 14px;
     line-height: 138%;
+}
+
+.form_success--hidden{
+    display: none;
 }
 
 .promotion_form_guide_list{
@@ -298,6 +310,7 @@ body{
     border-radius: 48px;
     font-style: 16px;
     line-height: 22px;
+    font-weight: bold;
     text-decoration: none;
     margin-top: 48px;
 }
@@ -305,6 +318,10 @@ body{
 .promotion_invite_link:visited{
     color: #000;
     text-decoration: none;
+}
+
+.promotion_invite_link:hover{
+    box-shadow: 0 0 3px 3px #fff;
 }
 
 .promotion--title--link{
@@ -358,6 +375,10 @@ body{
 
 }
 
+.footer_links_images_item:hover{
+    box-shadow: 0 0 3px 3px #fff;
+}
+
 .footer_links_conditions_item{
     text-decoration: none;
     color: #fff;
@@ -365,6 +386,10 @@ body{
 
 .footer_links_conditions_item:visited{
     color: #fff;
+}
+
+.footer_links_conditions_item:hover{
+    text-decoration: underline;
 }
 
 .footer_links_conditions_age{
@@ -397,4 +422,64 @@ body{
     color: #fff;
     opacity: 50%;
     margin-right: 24px;
+}
+
+.checkmark-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #07CB5C;
+    position: relative;
+  }
+  
+.checkmark-circle::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 3.5px;
+    height: 6px;
+    border: solid #04662E;
+    border-width: 0 1px 1px 0;
+    transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.promocode_success{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #07CB5C;
+    font-size: 13px;
+    line-height: 138%;
+}
+
+.promocode_success--hidden{
+    display: none;
+}
+
+.promocode_failed{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 13px;
+    line-height: 138%;
+}
+
+.promocode_failed_sign{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #661422;
+    color: #FF4D6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promocode_failed_text{
+    color: #FF4D6C;
+}
+
+.promocode_failed--hidden{
+    display: none;
 }
