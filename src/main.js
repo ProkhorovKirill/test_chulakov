@@ -4,9 +4,6 @@ const template = document.querySelector('.template');
 const changeCity = document.querySelector('.header_modal_location_change');
 const chooseCity = document.querySelector('.choose_city');
 
-
-
-
 if (!localStorage.getItem('city')){
     dialog.show();
 } else {
