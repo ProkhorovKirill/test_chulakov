@@ -653,7 +653,7 @@ body{
     border-radius: 5px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 430px) {
 
     .promotion--size{
         width: 320px;
