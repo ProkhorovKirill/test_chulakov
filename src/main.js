@@ -1,6 +1,3 @@
-import './css/style.css'
-import './css/sanitize.css'
-
 const dialog = document.querySelector('.dialog');
 const city = document.querySelector('.header_location_city');
 const template = document.querySelector('.template');
