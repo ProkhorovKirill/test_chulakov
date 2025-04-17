@@ -21,7 +21,7 @@ body{
 }
 
 .header{
-    width: 1440px;
+    width: clamp(320px, 100vw, 1440px);
     display: flex;
     justify-content: space-between;
     border-bottom: var(--secondary-color) 1px solid;
@@ -517,10 +517,10 @@ body{
 }
 
 .dialog{
-    position: fixed;
+    position: absolute;
     top: 76px;
     left: auto;
-    right: calc((100vw - 1440px) / 2 + 90px);
+    right: calc((100vw - 80vw) / 2 + 3.5vw);
     width: 297px;
     height: 123px;
     margin: 0;
@@ -531,22 +531,6 @@ body{
 }
 
 .dialog::after {
-    /* content: '';
-    position: absolute;
-    bottom: 120%;
-    left: 80%;
-    transform: translateX(-50%);
-    border-width: 0 8px 10px 8px;
-    border-color: transparent transparent var(--text-color) transparent; */
-
-    /* content: '';
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 10px solid transparent;
-    border-bottom-color: white; */
-
     content: '';
     position: absolute;
     top: -15px;
@@ -670,9 +654,6 @@ body{
 }
 
 @media (max-width: 320px) {
-    /* body{
-        max-width: 320px;
-    } */
 
     .promotion--size{
         width: 320px;
@@ -695,7 +676,8 @@ body{
 
     .dialog{
         position: absolute;
-        left: 5px;
+        top: 72px;
+        left: 2px;
     }
 
     .choose_city{
@@ -876,4 +858,14 @@ body{
         height: 30px;
     }
 
+}
+
+@media (max-width: 1441px){
+    .header{
+        max-width: 1440px;
+    }
+
+    .dialog{
+        right: 20px;
+    }
 }
