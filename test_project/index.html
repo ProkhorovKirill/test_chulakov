@@ -11,7 +11,7 @@
   </head>
   <body>
      <header class="header">
-      <a href="https://rostov.tele2.ru"><img src="./src/images/header/Logo.svg" alt="TELE2_logo" class="header_logo"></a>
+      <a href="https://rostov.tele2.ru" class="header_logo_link"><img src="./src/images/header/Logo.svg" alt="TELE2_logo" class="header_logo"></a>
         <div class="header_location">
           <img src="./src/images/header/location.svg" alt="location" class="header_location_logo">
           <span class="header_location_city">Ростов-на-Дону</span>
@@ -49,7 +49,7 @@
             <p class="promotion_info_item--text">Акция продлится с 1 по 20 сентября</p>
             <p class="promotion_info_item--big_text">ЭТО ВАША <span class="profit">ВЫГОДА!</span></p>
             <p class="promotion_info_item--text">Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов</p>
-            <button class="promotion_info_button">Принять участие</button>
+            <a href="#get_promotion"><button class="promotion_info_button">Принять участие</button></a>
           </div>
           <div class="promotion_info_photo">
             <img src="./src/images/main/section_info/Boss1 2.svg" alt="Boss1">
@@ -76,46 +76,49 @@
           </ul>
         </section>
 
-        <section class="promotion_form promotion--size">
-          <div class="promotion_form_item">
-            <h2 class="promotion_title_form promotion--title">Несколько шагов <span class="profit">и 1 ТБ — ваш</span></h2>
-            <form action="#" method="post">
-              <fieldset class="phone_group">
-                <label for="phone_number" class="phone_number_label">Номер телефона</label>
-                <input type="tel" name="user_phone_number" id="phone_number" required placeholder="+7 (999) 999-99-99" pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" autocomplete="tel" inputmode="numeric" class="phone_number_input">
-                <div class="promocode_success promocode_success--hidden"><span class="checkmark-circle"></span><span>Промокод выслан на ваш номер</span></div>
-                <div class="promocode_failed promocode_failed--hidden"><p class="promocode_failed_sign">!</p><span class="promocode_failed_text">На этот номер уже выслан промокод</span></div>
-              </fieldset>
-              <fieldset class="agreement_group">
-                <label for="agreement" class="agreement_label">
-                  <input type="checkbox" name="agreement" id="agreement" required>
-                  <span class="custom-checkbox-agreement"></span>
-                  Даю согласие на обработку персональных данных. <a href="#" class="agreement_conditions">Условия соглашения.</a>
-                </label>
-              </fieldset>
-              <button type="submit" class="agreement_button">Выслать промокод</button>
-            </form>
-            <div class="form_success form_success--hidden">
-              <div class="form_success_img"><img src="./src/images/main/section_form/Vector 5.svg" alt="galochka"></div>
-              <p class="form_success_text ">Промокод выслан на ваш номер</p>
+        <section class="promotion_form promotion--size" id="get_promotion">
+          
+          <!-- <div class="promotion_form_items"> -->
+            <div class="promotion_form_item">
+              <h2 class="promotion_title_form promotion--title">Несколько шагов <span class="profit">и 1 ТБ — ваш</span></h2>
+              <form action="#" method="post" class="get_promocode">
+                <fieldset class="phone_group">
+                  <label for="phone_number" class="phone_number_label">Номер телефона</label>
+                  <input type="tel" name="user_phone_number" id="phone_number" required placeholder="+7 (999) 999-99-99" pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" autocomplete="tel" inputmode="numeric" class="phone_number_input">
+                  <div class="promocode_success promocode_success--hidden"><span class="checkmark-circle"></span><span>Промокод выслан на ваш номер</span></div>
+                  <div class="promocode_failed promocode_failed--hidden"><p class="promocode_failed_sign">!</p><span class="promocode_failed_text">На этот номер уже выслан промокод</span></div>
+                </fieldset>
+                <fieldset class="agreement_group">
+                  <label for="agreement" class="agreement_label">
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <span class="custom-checkbox-agreement"></span>
+                    Даю согласие на обработку персональных данных. <a href="#" class="agreement_conditions">Условия соглашения.</a>
+                  </label>
+                </fieldset>
+                <button type="submit" class="agreement_button" >Выслать промокод</button>
+              </form>
+              <div class="form_success form_success--hidden">
+                <div class="form_success_img"><img src="./src/images/main/section_form/Vector 5.svg" alt="galochka"></div>
+                <p class="form_success_text ">Промокод выслан на ваш номер</p>
+              </div>
             </div>
-          </div>
-          <div class="promotion_form_guide">
-            <ul class="promotion_form_guide_list">
-              <li class="promotion_form_guide_list_item">
-                <p class="number_of_item">1</p>
-                <p class="text_of_item">Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
-              </li>
-              <li class="promotion_form_guide_list_item">
-                <p class="number_of_item">2</p>
-                <p class="text_of_item">Перейдите на сайт Tele2 и активируйте промокод при подключении на тариф «Мой Онлайн+»</p>
-              </li>
-              <li class="promotion_form_guide_list_item">
-                <p class="number_of_item">3</p>
-                <p class="text_of_item">Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
-              </li>
-            </ul>
-          </div>
+            <div class="promotion_form_guide">
+              <ul class="promotion_form_guide_list">
+                <li class="promotion_form_guide_list_item">
+                  <p class="number_of_item">1</p>
+                  <p class="text_of_item">Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
+                </li>
+                <li class="promotion_form_guide_list_item">
+                  <p class="number_of_item">2</p>
+                  <p class="text_of_item">Перейдите на сайт Tele2 и активируйте промокод при подключении на тариф «Мой Онлайн+»</p>
+                </li>
+                <li class="promotion_form_guide_list_item">
+                  <p class="number_of_item">3</p>
+                  <p class="text_of_item">Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
+                </li>
+              </ul>
+            </div>
+          <!-- </div> -->
         </section>
 
         <section class="promotion_invite promotion--size">
@@ -144,11 +147,11 @@
         </div>
       </div>
       <div class="footer_info">
-        <div >
-          <a href="https://rostov.tele2.ru"><img src="./src/images/header/Logo.svg" alt="TELE2_logo"></a>
+        <div class="footer_tele2_info">
+          <a href="https://rostov.tele2.ru"><img src="./src/images/header/Logo.svg" alt="TELE2_logo" class="footer_logo"></a>
           <span class="footer_info_tele2">© Tele2 Россия, 2021</span>
         </div>
-        <div>
+        <div class="footer_chulakov_info">
           <span class="footer_info_chulakov">Сделано в Студии Олега Чулакова</span>
           <a href="https://chulakov.ru/"><img src="./src/images/footer/Logo 1.svg" alt="CHULAKOV_logo"></a>
         </div>
