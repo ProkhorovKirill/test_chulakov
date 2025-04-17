@@ -1,6 +1,5 @@
 import './css/style.css'
 import './css/sanitize.css'
-//import viteLogo from '/vite.svg'
 
 const dialog = document.querySelector('.dialog');
 const city = document.querySelector('.header_location_city');
@@ -69,5 +68,9 @@ phoneInput.addEventListener('input', (e) => {
     e.target.value = formatted;
 });
 
-
-
+document.querySelector('.up_button').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+})
